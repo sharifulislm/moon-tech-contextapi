@@ -2,13 +2,11 @@ import React, {
   createContext,
   useContext,
   useEffect,
-  useReducer,
-  useState,
+  useReducer
 } from "react";
 import { actionTypes } from "../state/ProductState/actionTypes";
 import {
-  productReducer,
-  initialState,
+  initialState, productReducer
 } from "../state/ProductState/productReducer";
 
 const PRODUCT_CONTEXT = createContext();
