@@ -1,17 +1,11 @@
 import React from "react";
 import ProductCard from "../components/ProductCard";
-
 import { useProducts } from "../context/ProductProvider";
-import { useProductss } from "../Contexts/ProductProvider";
-
 
 const Home = () => {
   const {
     state: { products, loading, error },
   } = useProducts();
-  const {data} = useProductss();
-  console.log(data)
-
 
   let content;
 
